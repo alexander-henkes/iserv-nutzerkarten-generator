@@ -14,7 +14,12 @@ Dieses Repository enth√§lt eine statische Webanwendung (`HTML/JS/CSS`), die Sch√
 
 **Keine Installation erforderlich! Sofort einsatzbereit auf PC, Mac oder Tablet.**
 
-[![Open Generator](https://img.shields.io/badge/Status-Online-success?style=for-the-badge)](https://alexander-henkes.github.io/iserv-nutzerkarten-generator/)
+[![GitHub](https://img.shields.io/badge/GitHub-alexander--henkes-blue?logo=github)](https://github.com/alexander-henkes)
+[![Release](https://img.shields.io/github/v/release/alexander-henkes/iserv-nutzerkarten-generator?color=success)](https://github.com/alexander-henkes/iserv-nutzerkarten-generator/releases/)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Falexander-henkes.github.io%2Fiserv-nutzerkarten-generator%2F)](https://alexander-henkes.github.io/iserv-nutzerkarten-generator/)
+[![Release Date](https://img.shields.io/github/release-date/alexander-henkes/iserv-nutzerkarten-generator)](https://github.com/alexander-henkes/iserv-nutzerkarten-generator/releases)
+[![Code Size](https://img.shields.io/github/languages/code-size/alexander-henkes/iserv-nutzerkarten-generator)](https://github.com/alexander-henkes/iserv-nutzerkarten-generator)
+[![Issues](https://img.shields.io/github/issues-raw/alexander-henkes/iserv-nutzerkarten-generator)](https://github.com/alexander-henkes/iserv-nutzerkarten-generator/issues/)
 
 </div>
 
