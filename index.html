@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IServ-Nutzerkarten-Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-populate@1.21.0/browser/xlsx-populate.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>IServ-Nutzerkarten-Generator</h1>
+        <p class="subtitle">Erstellen Sie druckbare Login-Karten für IServ aus der Schuldock-Benutzerverwaltung</p>
+
+        <div class="import-section">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab('upload')">Excel-Datei hochladen</button>
+                <button class="tab-btn" onclick="switchTab('paste')">Daten manuell einfügen</button>
+            </div>
+
+            <div id="upload-tab" class="tab-content active">
+                <div class="password-input-section">
+                    <label for="excel-password">Schutzkennwort der Excel-Datei:</label>
+                    <input type="password" id="excel-password" placeholder="Bitte zuerst das festgelegte Schutzkennwort eingeben ..." oninput="toggleFileUpload()">
+                </div>
+                <div class="file-upload disabled" id="file-upload-area" onclick="handleFileUploadClick()">
+                    <input type="file" id="file-input" accept=".xlsx" onchange="handleFileUpload(event)" disabled>
+                    <label class="file-upload-label">
+                        Klicken Sie hier oder ziehen Sie eine Excel-Datei hierher<br>
+                        <small style="color: #999; margin-top: 10px; display: inline-block;">Unterstütztes Format: .xlsx</small>
+                    </label>
+                </div>
+            </div>
+
+            <div id="paste-tab" class="tab-content">
+                <div class="instructions-box">
+                    <h4>Anleitung:</h4>
+                    <ol>
+                        <li>Markieren Sie in Excel die Zellen mit den reinen Benutzerdaten (Spalten A–D, ohne erste Zeile).</li>
+                        <li>Kopieren Sie die Daten mit Strg+C (Windows) bzw. Cmd+C (Mac).</li>
+                        <li>Fügen Sie die Daten in das Textfeld unten mit Strg+V (Windows) bzw. Cmd+V (Mac) ein.</li>
+                        <li>Klicken Sie auf <em>Daten verarbeiten</em>, um eine Vorschau zu erhalten.</li>
+                        <li>Klicken Sie auf <em>Drucken</em>, um die Karten zu drucken.</li>
+                    </ol>
+                </div>
+                <textarea id="paste-area" placeholder="Max	Mustermann	max.mustermann@schule.de	Passwort123&#10;..."></textarea>
+                <button class="btn-primary" style="margin-top: 15px;" onclick="handlePasteData()">Daten verarbeiten</button>
+            </div>
+        </div>
+
+        <div class="options-section">
+            <h3>Anzeige-/Druckoptionen</h3>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="show-vorname" checked>
+                    <label for="show-vorname">Vorname</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="show-nachname" checked>
+                    <label for="show-nachname">Nachname</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="show-nutzername" checked>
+                    <label for="show-nutzername">Nutzername/E-Mail</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="show-passwort" checked>
+                    <label for="show-passwort">Initialpasswort</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="preview-info" id="preview-info">
+            <strong>Daten erfolgreich geladen!</strong><br>
+            <span id="student-count">0</span> Schüler gefunden | <span id="page-count">0</span> Seite(n) werden erstellt
+        </div>
+
+        <div class="error-message" id="error-message">
+            <div id="error-text"></div>
+            <button class="btn-retry" id="retry-btn" onclick="location.reload()" style="display: none; margin-top: 15px;">Erneut versuchen!</button>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-primary" onclick="generatePreview()">Vorschau aktualisieren</button>
+            <button class="btn-secondary" id="print-btn" onclick="window.print()" disabled>Drucken</button>
+        </div>
+
+        <div class="preview-section" id="preview-section">
+            <h3>Vorschau</h3>
+            <div class="preview-container" id="preview-container"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Alexander Henkes (2026)
+    </div>
+
+    <div class="print-area" id="print-area"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
