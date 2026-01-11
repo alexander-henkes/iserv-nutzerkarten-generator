@@ -8,7 +8,7 @@ Dieses Repository enthält eine statische Webanwendung (`HTML/JS/CSS`), die Sch�
 
 <div align="center">
 
-## 🚀 DIREKT NUTZEN
+## 🚀 DIREKT NUTZEN 🚀
 
 ### **[➡️ Programm direkt & lokal im Browser nutzen ⬅️](https://alexander-henkes.github.io/iserv-nutzerkarten-generator/)**
 
@@ -65,9 +65,9 @@ Dies ist der komfortabelste Weg für Schuldock-Exporte.
 
 ## Technische Details
 
-### Bibliotheken
+### Bibliotheken & Danksagungen
 Das Projekt nutzt externe Bibliotheken für das Parsing von Excel-Dateien:
-- **xlsx-populate**: Ermöglicht das Lesen und Entschlüsseln von `.xlsx`-Dateien direkt im Browser.
+- **[xlsx-populate](https://github.com/dtjohnson/xlsx-populate)** (v1.21.0) von Dave Johnson: Ermöglicht das Lesen und Entschlüsseln von `.xlsx`-Dateien direkt im Browser. Die Bibliothek wird über das [jsDelivr CDN](https://www.jsdelivr.com/) eingebunden.
 
 ## Datenschutz-Hinweis
 
@@ -77,6 +77,41 @@ Da dieses Tool für die Verarbeitung von Schülerdaten konzipiert ist, wurde auf
 
 ## Lizenz
 
-Dieses Projekt wurde für schulische Zwecke entwickelt.
+Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert und wurde für schulische Zwecke entwickelt.
 
-**Autor**: Alexander Henkes (2026)
+### Was bedeutet das konkret?
+
+Die MIT-Lizenz ist eine der freizügigsten Open-Source-Lizenzen. **Sie können dieses Tool frei nutzen**:
+
+✅ **Verwenden, kopieren, weitergeben** – An Ihrer Schule, zu Hause, mit Kollegen teilen, an andere Schulen weitergeben  
+✅ **Verändern und anpassen** – Code ändern, Funktionen hinzufügen, Design anpassen  
+✅ **In eigene Projekte einbauen** – Als Grundlage für eigene Tools verwenden  
+✅ **Kommerziell nutzen** – Auch wenn Sie damit Geld verdienen würden (z. B. als Teil eines kostenpflichtigen Services)
+
+### Was müssen Sie beachten?
+
+📌 **Einzige Bedingung**: Bei Weitergabe oder Veröffentlichung Ihrer angepassten Version sollten Sie den ursprünglichen Copyright-Hinweis und die Lizenz beibehalten.
+
+```
+MIT License
+
+Copyright (c) 2026 Alexander Henkes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
