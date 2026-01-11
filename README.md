@@ -1,6 +1,6 @@
 # IServ-Nutzerkarten-Generator
 
-Webbasiertes Tool zur Erstellung von druckbaren Login-Karten für IServ, optimiert für Exporte aus der Schuldock-Benutzerverwaltung.
+Webbasiertes Tool zur Erstellung von druckbaren Login-Karten für IServ, optimiert für Exporte aus der **Schuldock-Benutzerverwaltung**.
 
 ## Anwendungskontext
 
