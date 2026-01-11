@@ -83,7 +83,7 @@ Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert und wurde für sch
 
 Die MIT-Lizenz ist eine der freizügigsten Open-Source-Lizenzen. **Sie können dieses Tool frei nutzen**:
 
-✅ **Verwenden, kopieren, weitergeben** – An Ihrer Schule, zu Hause, mit Kollegen teilen, an andere Schulen weitergeben  
+✅ **Verwenden, kopieren, weitergeben** – An Ihrer Schule, zu Hause, mit Kollegen teilen
 ✅ **Verändern und anpassen** – Code ändern, Funktionen hinzufügen, Design anpassen  
 ✅ **In eigene Projekte einbauen** – Als Grundlage für eigene Tools verwenden  
 ✅ **Kommerziell nutzen** – Auch wenn Sie damit Geld verdienen würden (z. B. als Teil eines kostenpflichtigen Services)
